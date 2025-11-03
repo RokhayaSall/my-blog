@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <h1>Bienvenue sur mon blog</h1>
+      <h1>Bienvenue sur mon blog </h1>
       
     </>
   )

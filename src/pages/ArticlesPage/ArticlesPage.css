@@ -111,6 +111,7 @@
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
+    color: white;
 
 
     transition: background-color 0.2s, transform 0.1s;
@@ -160,17 +161,17 @@
         line-height: 1.6;
     }
 
-   .updateButton,
+    .updateButton,
     .deleteButton {
-        padding: 6px 12px; 
+        padding: 6px 12px;
         font-size: 0.9rem;
-        width: 100%;       
-        max-width: 135px;  
+        width: 100%;
+        max-width: 135px;
     }
 
     .action-buttons {
-        flex-direction: column; 
+        flex-direction: column;
         gap: 10px;
-        align-items: center;    
+        align-items: center;
     }
 }

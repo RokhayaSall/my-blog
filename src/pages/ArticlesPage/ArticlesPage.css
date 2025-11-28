@@ -1,0 +1,176 @@
+.article-detail-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: color 0.2s;
+}
+
+.back-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.article-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    color: #1a1a1a;
+}
+
+.article-meta {
+    font-size: 0.95rem;
+    color: #777;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.category-tag {
+    background-color: #f0f0f0;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #555;
+    text-transform: uppercase;
+}
+
+.article-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.article-content {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #2c3e50;
+}
+
+.article-content p {
+    margin-bottom: 20px;
+}
+
+.loading-state,
+.error-state {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.2rem;
+}
+
+.error-state {
+    color: #e74c3c;
+}
+
+
+.updateButton {
+    padding: 8px 16px;
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+
+
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.updateButton:hover {
+    background-color: #e0a800;
+}
+
+.updateButton:active {
+    transform: scale(0.98);
+}
+
+.deleteButton {
+    padding: 8px 16px;
+    background-color: #ec1010;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+
+
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.deleteButton:hover {
+    background-color: #e68892;
+}
+
+.deleteButton:active {
+    transform: scale(0.98);
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .article-detail-page {
+        padding: 20px 15px;
+    }
+
+    .article-title {
+        font-size: 1.8rem;
+    }
+
+    .article-meta {
+        flex-direction: column;
+        gap: 8px;
+        font-size: 0.85rem;
+    }
+
+    .article-image {
+        max-height: 300px;
+    }
+
+    .article-content {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+   .updateButton,
+    .deleteButton {
+        padding: 6px 12px; 
+        font-size: 0.9rem;
+        width: 100%;       
+        max-width: 135px;  
+    }
+
+    .action-buttons {
+        flex-direction: column; 
+        gap: 10px;
+        align-items: center;    
+    }
+}

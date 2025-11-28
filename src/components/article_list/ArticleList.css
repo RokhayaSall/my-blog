@@ -64,7 +64,7 @@
     background-color: #0056b3;
 }
 
-/* ----- MEDIA QUERY MOBILE ----- */
+
 @media (max-width: 768px) {
     .articles-grid {
         grid-template-columns: 1fr; 
